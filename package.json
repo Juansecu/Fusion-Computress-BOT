@@ -1,0 +1,30 @@
+{
+  "name": "fusion-computress-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon -q ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juansecu/Fusion-Computress-BOT.git"
+  },
+  "keywords": [
+    "Fusion-Computress",
+    "BOT"
+  ],
+  "author": "Juansecu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juansecu/Fusion-Computress-BOT/issues"
+  },
+  "homepage": "https://github.com/Juansecu/Fusion-Computress-BOT#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
