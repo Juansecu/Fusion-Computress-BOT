@@ -17,7 +17,8 @@ module.exports = async (bot, message, args) => {
                         .catch(error => {
                             message.channel.send(`I'm so sorry. An internal error has ocurred!\n\`\`\`console\n${error}\n\`\`\``);
                         });
-                });
+                })
+                .catch(error => console.error(error));
         }
     }
 }

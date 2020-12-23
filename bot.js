@@ -1,9 +1,9 @@
 const { Client, Collection } = require('discord.js');
 const { readdirSync } = require('fs');
 
-const { activityStatus } = require('./functions/customDiscordData');
-
 const { token } = require('./config.json');
+
+const { activityStatus } = require('./functions/customDiscordData');
 
 const bot = new Client();
 

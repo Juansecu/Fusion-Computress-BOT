@@ -1,3 +1,8 @@
+const { Presence } = require('discord.js');
+
+/**
+ * @param {Presence} status 
+ */
 module.exports.activityStatus = (status) => {
     switch (status) {
         case 'online':
