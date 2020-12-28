@@ -19,9 +19,9 @@ module.exports = async (bot, message, args) => {
             .setDescription(`Information about <@${message.author.id}>:`)
             .addFields(
                 {name: 'Username:', value: message.author.username, inline: true},
-                {name: 'Tag:', value: message.author.discriminator, inline: true},
-                {name: 'ID', value: message.author.id, inline: true},
-                {name: 'Presense:', value: bot.activityStatus(message.author.presence.status), inline: true},
+                {name: 'User Tag:', value: message.author.discriminator, inline: true},
+                {name: 'User ID', value: message.author.id, inline: true},
+                {name: 'User Presense:', value: bot.activityStatus(message.author.presence.status), inline: true},
                 {name: 'Account created at:', value: message.author.createdAt, inline: true}
             )
             .setTimestamp()
@@ -45,9 +45,9 @@ module.exports = async (bot, message, args) => {
                                 .setDescription(`Information about <@${userInfo.id}>:`)
                                 .addFields(
                                     {name: 'Username:', value: userInfo.username, inline: true},
-                                    {name: 'Tag:', value: userInfo.discriminator, inline: true},
-                                    {name: 'ID', value: userInfo.id, inline: true},
-                                    {name: 'Presense:', value: bot.activityStatus(userInfo.presence.status), inline: true},
+                                    {name: 'User Tag:', value: userInfo.discriminator, inline: true},
+                                    {name: 'User ID', value: userInfo.id, inline: true},
+                                    {name: 'User Presense:', value: bot.activityStatus(userInfo.presence.status), inline: true},
                                     {name: 'Account created at:', value: userInfo.createdAt, inline: true}
                                 )
                                 .setTimestamp()
@@ -83,9 +83,9 @@ module.exports = async (bot, message, args) => {
                             .setDescription(`Information about <@${user.id}>:`)
                             .addFields(
                                 {name: 'Username:', value: user.username, inline: true},
-                                {name: 'Tag:', value: user.discriminator, inline: true},
-                                {name: 'ID', value: user.id, inline: true},
-                                {name: 'Presense:', value: bot.activityStatus(user.presence.status), inline: true},
+                                {name: 'User Tag:', value: user.discriminator, inline: true},
+                                {name: 'User ID', value: user.id, inline: true},
+                                {name: 'User Presense:', value: bot.activityStatus(user.presence.status), inline: true},
                                 {name: 'Account created at:', value: user.createdAt, inline: true}
                             )
                             .setTimestamp()
@@ -98,7 +98,7 @@ module.exports = async (bot, message, args) => {
                             new MessageEmbed()
                                 .setAuthor(message.author.tag, message.author.avatarURL())
                                 .setColor('RED')
-                                .setDescription(`Sorry. I couldn\'t find that User. Please, verify the User ID and try again.\n\n**User ID:** \`${userId}\``)
+                                .setDescription(`Sorry. I couldn\'t find that User. Please, verify the \`User ID\` and try again.\n\n**User ID:** \`${userId}\``)
                                 .setTimestamp()
                                 .setFooter(bot.user.username, bot.user.avatarURL())
                         );
@@ -107,7 +107,7 @@ module.exports = async (bot, message, args) => {
                 message.channel.send(new MessageEmbed()
                     .setAuthor(message.author.tag, message.author.avatarURL())
                     .setColor('RED')
-                    .setDescription(`The User ID is not valid.\n\n**User ID:** \`${userId}\``)
+                    .setDescription(`The \`User ID\` is not valid.\n\n**User ID:** \`${userId}\``)
                     .setTimestamp()
                     .setFooter(bot.user.username, bot.user.avatarURL())
                 );
