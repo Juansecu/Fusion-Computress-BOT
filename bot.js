@@ -7,12 +7,13 @@ const { activityStatus } = require('./functions/customDiscordData');
 
 const bot = new Client();
 
-(()=> {
+// Additional parametters for the Client:
+(() => {
     bot.activityStatus = activityStatus;
     bot.commands = new Collection();
 })();
 
-for(const file of readdirSync('./commands/')) {
+for (const file of readdirSync('./commands/')) {
     if (file.endsWith('.js')) {
         const fileName = file.substring(0, file.length - 3);
         const fileContents = require(`./commands/${file}`);
@@ -21,7 +22,7 @@ for(const file of readdirSync('./commands/')) {
     }
 }
 
-for(const file of readdirSync('./events/')) {
+for (const file of readdirSync('./events/')) {
     if (file.endsWith('.js')) {
         const fileName = file.substring(0, file.length - 3);
         const fileContents = require(`./events/${file}`);
@@ -33,5 +34,5 @@ for(const file of readdirSync('./events/')) {
 }
 
 bot.login(token)
-    .then(() => console.log('I\'m ready!'))
+    .then(() => console.log("I'm ready!"))
     .catch(error => console.log(error));

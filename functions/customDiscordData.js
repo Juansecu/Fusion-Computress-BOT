@@ -1,9 +1,8 @@
-const { Presence } = require('discord.js');
-
 /**
- * @param {Presence} status 
+ * @param {string} status Represents the presence status from a User.
+ * @returns {string} Returns a custom value for the presence status from a user.
  */
-module.exports.activityStatus = (status) => {
+module.exports.activityStatus = status => {
     switch (status) {
         case 'online':
             status = 'Online';
@@ -22,4 +21,4 @@ module.exports.activityStatus = (status) => {
     }
 
     return status;
-}
+};

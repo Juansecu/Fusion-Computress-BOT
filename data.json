@@ -1,15 +1,65 @@
 {
     "blacklist": {
+        "malornDiscordServers": [
+            {
+                "id": "793929182420664330",
+                "name": "OpenFusion2"
+            },
+            {
+                "id": "791566508228214795",
+                "name": "GMO Official"
+            },
+            {
+                "id": "776675592380612629",
+                "name": "FusionFall x"
+            },
+            {
+                "id": "791617085745791007",
+                "name": "FusionFall Central Official"
+            },
+            {
+                "id": "776352024191041537",
+                "name": "Wizard101 Legacy"
+            },
+            {
+                "id": "776352900959961089",
+                "name": "Wizard100"
+            },
+            {
+                "id": "778474208485048370",
+                "name": "Pirate100"
+            },
+            {
+                "id": "778465670668877854",
+                "name": "Pirate101 Legacy"
+            }
+        ],
         "malornTwitterAccounts": [
             "MalornWs1",
-            "FusionFallCO",
+            "FusionFall_CO",
             "W101Rewritten2",
             "Wizard100",
             "GM_Official_C",
             "SirCharlesQueen",
             "gamemaster1000",
             "OpenFusion_Devs",
-            "AlphaSpartan_GM"
+            "AlphaSpartan_GM",
+            "FusionFall_Arc",
+            "FusionFall_Reb",
+            "FusionFall_Central_Official",
+            "FusionFall_Devs",
+            "FusionFall_RE",
+            "FusionFallBR",
+            "WC_Devs",
+            "FusionFall_WC",
+            "FusionFall_WorldsCollide",
+            "FF_WorldsCollide",
+            "FusionFall_Rebirth",
+            "FF_Rebirth",
+            "SethStubbs5",
+            "Mac_Fufa",
+            "maclaine_walls",
+            "Last_Vanguard_"
         ],
         "userIds": [
             "747450571786813500",
@@ -71,12 +121,125 @@
             "688872635643199641",
             "729096549824462850",
             "652048116744323095",
-            "774793482778837003"
+            "774793482778837003",
+            "792883630623686658",
+            "792991241146859521",
+            "803013000491302962"
         ],
         "usernames": [
             "Cartoon Network",
             "Disney",
             "Warner Brothers"
+        ]
+    },
+    "botInformation": {
+        "commands": [
+            {
+                "name": "atb",
+                "longDescription": "Adds data to the blacklist.\n\n**• Discord users:** ID of each user to add\n**• Twitter Accounts:** `@` at the beginning\n\n**Example:**\n`fc!atb 5590523547624500158 @MalornWs1`",
+                "shortDescription": "Adds data to the blacklist.",
+                "neededPermissions": 0,
+                "onlyForTrustedPeople": true,
+                "arguments": []
+            },
+            {
+                "name": "ban",
+                "longDescription": "Bans a member from a server.",
+                "shortDescription": "Bans a member from a server.",
+                "neededPermissions": 4,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "blacklist",
+                "longDescription": "Shows every user of the blacklist.",
+                "shortDescription": "Shows every user of the blacklist.",
+                "neededPermissions": 0,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "botinfo",
+                "longDescription": "Displays some information about the BOT.",
+                "shortDescription": "Displays some information about the BOT.",
+                "neededPermissions": 0,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "botinvite",
+                "longDescription": "Generates an invitation link of the BOT and sends it to you by direct message.",
+                "shortDescription": "Generates an invitation link of the BOT and sends it to you by direct message.",
+                "neededPermissions": 0,
+                "onlyForTrustedPeople": false,
+                "arguments": [
+                    {
+                        "name": "admin",
+                        "description": "Generates an invitation link of the BOT with administrator permissions and sends it to you by direct message."
+                    },
+                    {
+                        "name": "omf",
+                        "description": "Generates an invitation link of the BOT with the minimum permissions for its correct operation and sends it to you by direct message."
+                    },
+                    {
+                        "name": "af",
+                        "description": "Generates an invitation link of the BOT with all needed permissions for the correct operation of every feature and sends it to you by direct message."
+                    }
+                ]
+            },
+            {
+                "name": "clear",
+                "longDescription": "Deletes a bulk of messages (max 100).",
+                "shortDescription": "Deletes a bulk of messages (max 100).",
+                "neededPermissions": 8192,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "deafen",
+                "longDescription": "Deafens a member from a voice channel.",
+                "shortDescription": "Deafens a member from a voice channel.",
+                "neededPermissions": 8388608,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "help",
+                "longDescription": "Displays all commands of the BOT.",
+                "shortDescription": "Displays all commands of the BOT.",
+                "neededPermissions": 0,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "move",
+                "longDescription": "Moves a member from a voice channel to another.",
+                "shortDescription": "Moves a member from a voice channel to another.",
+                "neededPermissions": 16777216,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "mute",
+                "longDescription": "Mutes a member from a voice channel.",
+                "shortDescription": "Mutes a member from a voice channel.",
+                "neededPermissions": 4194304,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            },
+            {
+                "name": "userinfo",
+                "longDescription": "Displays some information from a Discord user.",
+                "shortDescription": "Displays some information from a Discord user.",
+                "neededPermissions": 0,
+                "onlyForTrustedPeople": false,
+                "arguments": []
+            }
+        ]
+    },
+    "jokes": {
+        "forMalorn": [
+            "https://twitter.com/ChideraOkolo7"
         ]
     },
     "legitimateProjects": [
@@ -89,7 +252,8 @@
                 "292771709092626436",
                 "264760009592668160",
                 "501948382278058005"
-            ]
+            ],
+            "otherOfficialSocialMedia": []
         },
         {
             "name": "FusionFall Fighters",
@@ -103,7 +267,8 @@
                 "761628303873671208",
                 "466721057215086602",
                 "195678369734590464"
-            ]
+            ],
+            "otherOfficialSocialMedia": []
         },
         {
             "name": "FusionFall Minecraft",
@@ -128,7 +293,8 @@
                 "482032549778948105",
                 "143457510773358595",
                 "613703497333866506"
-            ]
+            ],
+            "otherOfficialSocialMedia": []
         },
         {
             "name": "Open Fusion",
@@ -140,6 +306,10 @@
                 "291492473832734720",
                 "737734271732678736",
                 "218130464982958080"
+            ],
+            "otherOfficialSocialMedia": [
+                "https://github.com/OpenFusionProject",
+                "https://twitter.com/OpenFusionProj"
             ]
         },
         {
@@ -151,28 +321,35 @@
                 "263815868956409879",
                 "334002820833345537",
                 "279393793248198656"
+            ],
+            "otherOfficialSocialMedia": []
+        },
+        {
+            "name": "Worlds Collide",
+            "discordServer": "",
+            "staff": [
+                "153575252058832896",
+                "334002820833345537",
+                "138642643918782464",
+                "275128368704520202",
+                "279393793248198656",
+                "336936209609654292",
+                "118198489627754498",
+                "205076862723031040",
+                "205038747568308224",
+                "118461984218808324",
+                "204828899551608833",
+                "228757359273443328"
+            ],
+            "otherOfficialSocialMedia": [
+                "https://www.youtube.com/channel/UCdm0CF-gk3UVxYB7dZopWUg"
             ]
         }
     ],
-    "legitimateUsers": {
-        "userIds": [
-            "275336345306660867",
-            "292771709092626436",
-            "143457510773358595",
-            "264760009592668160"
-        ],
-        "usernames": [
-            "Beka",
-            "cpunch",
-            "Devan",
-            "Emerald Hazylaser",
-            "Frizy",
-            "Jade 🐉",
-            "Juansecu",
-            "Kevman95",
-            "Lizzy",
-            "Mac",
-            "zakthepower"
-        ]
-    }
+    "trustedUsers": [
+        "275336345306660867",
+        "143457510773358595",
+        "264760009592668160",
+        "454234087901757441"
+    ]
 }

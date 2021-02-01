@@ -1,7 +1,7 @@
 {
   "name": "fusion-computress-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord BOT developed to keep Malorn content away mainly from FusionFall community' Discord servers",
   "main": "bot.js",
   "scripts": {
     "start": "node .",
@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/Juansecu/Fusion-Computress-BOT#readme",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "eris": "^0.14.0",
+    "eris-pagination": "^0.5.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
